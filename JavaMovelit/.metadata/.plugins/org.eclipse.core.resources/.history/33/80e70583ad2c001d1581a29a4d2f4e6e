@@ -1,0 +1,26 @@
+package Modelo;
+
+	import java.util.ArrayList;
+	import java.util.List;
+	
+	public class Compras {
+		
+		private int id_compra;
+		private String data_compra;
+		private Usuarios usuarios;
+		private List<Itens_Compra> itens = new ArrayList<Itens_Compra>();
+		
+		public Compras () {
+			
+		}
+		
+		public Compras(int id_compra, String data_compra, Usuarios usuarios, List<Itens_Compra> itens) {
+			super();
+			this.id_compra = id_compra;
+			this.data_compra = data_compra;
+			this.usuarios = usuarios;
+			this.itens = itens;
+		}
+		
+		
+	}

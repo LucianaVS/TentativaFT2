@@ -1,0 +1,18 @@
+package Modelo;
+
+public class Itens_Compra {
+    
+    
+    private Integer Qtd_Itens;
+     
+    private Real Valor_itens;
+    
+    
+    private Locais locais;
+    
+    private Set<Compra> compra;
+    
+    private Integer getQtd_Itens()        
+    }
+    
+   

@@ -1,0 +1,92 @@
+package Modelo;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class Locais {
+	
+	private int id_local;
+	private String nome_local;
+	private double preco_local;
+	private LocalDate data_local;
+	
+	private itenscompra intens-compra;
+	private meiostipos meios_tipos;
+	
+	//classe responsavel por formatar um padrao diferente do formato ISO
+	DataTimeFormatter formatter = DataTimeFormatter.ofPattern("dd/MM/YYYY");
+
+	public Locais () {
+		
+	}
+	
+	public Locais(int id_local, String nome_local, double preco_local, LocalDate data_local, itenscompra intens,
+			meiostipos meios_tipos, DataTimeFormatter formatter) {
+		super();
+		this.id_local = id_local;
+		this.nome_local = nome_local;
+		this.preco_local = preco_local;
+		this.data_local = data_local;
+		this.intens = intens;
+		this.meios_tipos = meios_tipos;
+		this.formatter = formatter;
+	}
+
+	public int getId_local() {
+		return id_local;
+	}
+
+	public void setId_local(int id_local) {
+		this.id_local = id_local;
+	}
+
+	public String getNome_local() {
+		return nome_local;
+	}
+
+	public void setNome_local(String nome_local) {
+		this.nome_local = nome_local;
+	}
+
+	public double getPreco_local() {
+		return preco_local;
+	}
+
+	public void setPreco_local(double preco_local) {
+		this.preco_local = preco_local;
+	}
+
+	public String getData_local() {
+		return formatter.format(data_local);
+	}
+
+	public void setData_local(String data_local) {
+		this.data_local = LocalDate.parse(data_local);
+	}
+
+	public itenscompra getIntens() {
+		return intens;
+	}
+
+	public void setIntens(itenscompra intens) {
+		this.intens = intens;
+	}
+
+	public meiostipos getMeios_tipos() {
+		return meios_tipos;
+	}
+
+	public void setMeios_tipos(meiostipos meios_tipos) {
+		this.meios_tipos = meios_tipos;
+	}
+
+	public DataTimeFormatter getFormatter() {
+		return formatter;
+	}
+
+	public void setFormatter(DataTimeFormatter formatter) {
+		this.formatter = formatter;
+	}
+	
+	
+}

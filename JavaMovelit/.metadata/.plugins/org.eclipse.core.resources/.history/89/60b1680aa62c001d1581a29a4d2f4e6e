@@ -1,0 +1,12 @@
+package Modelo;
+
+	import java.util.ArrayList;
+	import java.util.List;
+	
+	public class Compras {
+		
+		private int id_compra;
+		private String data_compra;
+		private List<Itens_Compra> itens = new ArrayList<Itens_Compra>();
+		
+	}

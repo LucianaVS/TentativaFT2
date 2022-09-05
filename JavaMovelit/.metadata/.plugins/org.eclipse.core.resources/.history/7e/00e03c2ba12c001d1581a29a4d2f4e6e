@@ -1,0 +1,11 @@
+package Modelo;
+
+public class compras {
+ 
+    private int id_compra;
+    
+    private Date Data_compra;
+    
+    private double Valor_compra;    
+}
+   

@@ -1,0 +1,8 @@
+package Modelo;
+
+public class Permissoes {
+    
+   private int id_permissoes;
+   
+    private String Tipo_permissoes;
+}
